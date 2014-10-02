@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0074)http://wpbpshop.com/wpbpshop-manuals/buddypress-user-account-type-pro.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+        <title>BuddyPress User Account Type PRO User Manual</title>
+        <link rel="stylesheet" href="./documentation_files/style.css" type="text/css" media="screen">
+        <script async="" src="./documentation_files/v2"></script><script async="" type="text/javascript" src="./documentation_files/tc.js"></script><script async="" type="text/javascript" src="./documentation_files/saved_resource"></script><script src="./documentation_files/saved_resource(1)" async="" type="text/javascript"></script><script src="./documentation_files/jquery-latest.js"></script>
+        <script language="javascript">
+            var j = jQuery;
+            j(document).ready(function(){
+                j('ul li a').click(function(){
+                    alert('da');
+                    j('html, body').animate({
+                        scrollTop: j( j(this).attr('href') ).offset().top
+                    }, 500);
+                    return false;
+                });​
+            });
+        </script>
+    <script async="" src="./documentation_files/classic.js"></script></head>
+    <body>
+        <div id="header">
+            <div id="shop_logo">
+                <a href="http://wpbpshop.com/buddypress-user-account-type-pro">
+                    <h1 id="product_name">BuddyPress User Account Type PRO 
+                        <span style="font-size: 12px; margin-top: -10px; display:inline-block "> v1.0.2</span></h1>
+                </a>
+                <a href="http://wpbpshop.com/">
+                    <img id="logo" src="./documentation_files/logo3.png">
+                </a>
+            </div>
+        </div>
+            <div style="clear: both"></div>
+            <div id="content">
+                <h3>Contents:</h3>
+                <ul id="content_list">
+                    <li><a href="http://wpbpshop.com/wpbpshop-manuals/buddypress-user-account-type-pro.html#installation">Installation</a></li>
+                    <li><a href="http://wpbpshop.com/wpbpshop-manuals/buddypress-user-account-type-pro.html#basic_settings">Configuring basic settings</a></li>
+                    <li><a href="http://wpbpshop.com/wpbpshop-manuals/buddypress-user-account-type-pro.html#profile_data_settings">Configuring profile data settings</a></li>
+                    <li><a href="http://wpbpshop.com/wpbpshop-manuals/buddypress-user-account-type-pro.html#profile_data_settings">Configuring style settings</a></li>
+                    <li><a href="http://wpbpshop.com/wpbpshop-manuals/buddypress-user-account-type-pro.html#restriction_settings">Configuring access settings</a></li>
+                    <li><a href="http://wpbpshop.com/wpbpshop-manuals/buddypress-user-account-type-pro.html#shortcode_reference">Shortcode reference</a></li>
+                </ul>
+                
+                <h3><a name="installation">Installation</a></h3>
+                <div class="description">
+                    <p>Installation is simple. just download <b>buddypress-user-account-type-pro.zip</b> from you wp.bp.shop profile 
+                    after purchasing. Upload it to your site's wp-content/plugins directory, unzip it and activate it from 
+                    wp-admin -&gt; plugins. <br><br>
+                    Or, go to up-admin -&gt; plugins -&gt; add new -&gt; upload and then upload buddypress-user-account-type-pro.zip file.
+                    after uploading it,activate it. and you are ready to have its power!
+                    <br><br>
+                    <b><span class="note">Important Note:</span></b> You must need <a href="http://buddypress.org/">BuddyPress</a> installed and activated to use this plugin 
+                    </p>
+                </div>
+                
+                
+                <a name="basic_settings"><h3>Configuring basic settings</h3></a>
+                <div class="description">
+                    <p>
+                        <b>Step 1: </b> If you want to allow different type of users, first you need to create type names.
+                        BuddyPress User Account Type PRO searches for if theres any drop down select box field in 'base' BuddyPress profile group.
+                        So, you must create a drop down select box field to define user type and add type names.
+                        <img src="./documentation_files/buatp-1.png" class="screenshot">
+                        <img src="./documentation_files/buatp-2.png" class="screenshot">
+                        <img src="./documentation_files/buatp-3.png" class="screenshot">
+                        <br><br>
+                        <b>Step 2: </b> Now go to wp-admin -&gt; BUAT PRO settings, you will get all select box type fields, you need to select 
+                        one which will define user types. it should look like,
+                        <img src="./documentation_files/buatp-4.png" class="screenshot">
+                        <br><br>
+                        <b>Step 3: </b> After selected type field, you will get all basic setting fields, like:
+                        <img src="./documentation_files/buatp-5.png" class="screenshot">
+                        <b>Option [ Select default type ]:</b> It will be default user type, if user select nothing during registration,
+                        or, if any users type is not assigned while trigging existing users, default type will be assigned.
+                        <br>
+                        <b>Option [ Select page to show (type name 1) type users ]:</b>
+                        This is the page name where (type name 1) type user directory should show,<br> Teachers directory is example here
+                        <br>
+                        <b>Option [ Select role for (type name 1) type users ]:</b> Select Role for (type name 1) type users, teachers type is
+                        example here.
+                        <b>Option [ Whats about existing users? ]:</b> What you want to do existing users? if you select <b>Do Nothing</b>
+                        it will just do noting, if you select <b> Assign type according to role</b>, it will assign type value to existing users
+                        according to Roles and of course which are not selected their types, you may choose which type should assign for which role,
+                        after selecting <b> Assign type according to role</b>, you'll get option to select that, it should look like:
+                        <img src="./documentation_files/buatp-6.png" class="screenshot">
+                        if you select <b>Assign default type to all</b>, it will just assign default type to existing users who are not
+                        selected own type, but it wont change any role and capability.
+                        <br><br>
+                        <b><span class="note">Important note:</span></b> This option will appear only first time you configure BuddyPress User Account Type PRO. 
+                        But you can have role triggering option once you configured it.
+                        <br><br>
+                        <b>Option [ Exclude IDs from change role ( comma separated ) ]:</b> you may choose some user IDs not to change type or roles
+                        By default, admins are excluded from triggering types and roles.
+                        <br>
+                        <b>Option [ Users to display per page ]:</b> BuddyPress shows 10 members per page in members directory, 
+                        you may increase or decrease it, it will work both for BuddyPress members directory and different user type directories.
+                        <br>
+                        <b>Option [ Can user change type after registration? ]:</b> You can allow users to change own type after registration
+                        from their BuddyPress profile. if you don't allow users to change their own profile, user can't do that but
+                        admin can change it by editing his/her profile.
+                        
+                        <br><br>
+                        <b><span class="note">Important note:</span></b> Thats all for basic setting, You must click 
+                        <b>"save change"</b> before going other settings.
+                        <br><br>
+                    </p>
+                  </div>
+                
+                
+                <a name="profile_data_settings"><h3>Configuring profile data settings</h3></a>
+                <div class="description">
+                    <p>
+                        <b>Step 4: </b> You may manage different fields for different types of users from profile data settings
+                        section. but before configuring this section, you must configure basic settings section. here is how it should look:
+                        <img src="./documentation_files/buatp-7.png" class="screenshot">
+                        <br>
+                        <b>Option [ Exclude type selection users ]:</b> You may decide to have some protected account type that is not open to users during registration.
+                        Which means, user cant select these protected type as their type, but only admin can assign these type to users manually editing user's profile.
+                        If you want that, selected types from here which you want as protected.
+                        <br>
+                        <br>
+                        <b>Option [ Exclude fields for (user type 1) type users ]:</b> select which fields you don't want to show for user type 1
+                        users. user cant show/edit excluded fields by own, but admin can edit it.
+                        <br><br>
+                        <b>Option [ Include fields for (user type 1) type users at registration form ]:</b> After excluding fields from different type users
+                        save it, and there will be generate a section to include fields at registration form. you may select type associated fields
+                        to show in registration form. so, when user select own type during registration, associated fields of that type will be appeared
+                        via ajax request. which I like to call, <b>Conditional Profile Fields</b>
+                        <img src="./documentation_files/buatp-8.png" class="screenshot">
+                        <br><br>
+                        <b>Option [ Select fields to show in profile loop ]:</b> Select which fields you want to show in 
+                        user directory list view. it will exclude automatically if user dosent fill up data for a field.
+                        only those fields will be visible which will contain data. and it will aligned by column automatically.
+                        <br><br>
+                        <b>Option [ Number of fields per column ]:</b> Select number of profile fields you want to show per colum in 
+                        user directory list view. number of columns will be automatically generated depending on selected profile fields
+                        and numbers of fields you want to show per column
+                        <img src="./documentation_files/buatp-9.png" class="screenshot">
+                    </p>
+                </div>
+                
+                <a name="style_settings"><h3>Configuring style settings</h3></a>
+                <div class="description">
+                    <p>
+                        <b>Step 5: </b> You can manage style of both custom and default directories from this section, it should be look like
+                        <img src="./documentation_files/buatp-10.png" class="screenshot">
+                        <br>
+                        <b>Option [ Default view of members directory ]:</b> You can select default view of directories. BuddyPress 
+                        default view is list view, here is another option to show it like grid view,
+						<br>
+                        <img src="./documentation_files/buatp-11.png" class="screenshot">
+                        <br>
+                        <b>Option [ Allow users to change view ]:</b> You may allow visitors to change directory view, user can select list or 
+                        grid view them self.
+                        <img src="./documentation_files/buatp-12.png" class="screenshot">
+                        
+                    </p>
+                </div>
+                
+                <a name="restriction_settings"><h3>Configuring access settings</h3></a>
+                <div class="description">
+                    <p>
+                        <b>Step 6: </b> you can manage page/post restriction settings for different types of users
+                        <img src="./documentation_files/buatp-13.png" class="screenshot">
+                        <br>
+                        <b>Option [ Restrict pages/posts for (user type 1) type users ]:</b> you can place here comma separated post/page IDs
+                        so, this particular type of users cant access these pages.
+                        <br>
+                        <br>
+                        <b>Option [ Restrict URL for (user type 1) type users ]:</b> You may want to restrict specific URL from specific user types.
+                        Use only slug here, Example: user /example-page if you want to restrict yoursite.com/example-page
+                        For BuddyPress varialble URLs ( members, Groups ), user <b>[user_name]</b> where you need to place displayed users user name,
+                        and place <b>[group_name]</b> where you need current group name.
+                        <br>
+                        <b>Example:</b> If you want to restrict users profile, user /members/[user_name]/profile/public
+                        <br>If you want to restrict users profile, user /members/[user_name]/profile/public
+                        <br>
+                        <b><span class="note">Important Note:</span></b> If you want to restrict BuddyPress component root urls,e.g: members, groups, activity, 
+                        User URL restriction instead of ID restriction, so, Sub pages will not restricted.
+                    
+                        <br>
+                        <br>
+                        <b>Option [ Select page to show Restriction notice for (user type 1) type users ]:</b> You may select a page to show
+                        notice/message/reason of the restriction. Plugin will redirect users while they will try to access restricted pages.
+                        <br>
+                        <br>
+                        <b>Option [ Text/html restriction ]:</b>
+                        You may select a part of content only to be visible for particular user type users. syntex is: <br>
+                        
+                        <b>[buatp user_type="user_type_1,user_type_2"]<br>
+                        YOUR CONTENTS HERE<br>
+                        [buatp]</b>
+                           
+                        <br>
+                        which means, this particular text content is only for user_type_1,user_type_2 type user. and output of this:
+                        <img src="./documentation_files/buatp-14.png" class="screenshot">
+                        <br>
+                        <b>Option [ Restriction message for shortcode restriction ]:</b> You can add custom notification text for content restriction
+                        
+                    </p>
+                </div>
+                
+                <a name="shortcode_reference"><h3>Shortcode reference</h3></a>
+                <div class="description">
+                    <p>
+                        <b>[buatp]:</b> using <b>[buatp]</b> shrotcode, you can have all members inside any page/post
+                        <img src="./documentation_files/buatp-15.png" class="screenshot">
+                        <br> 
+                        <b>[buatp] filters:</b>
+           
+                            </p><li><b>user_type:</b> can be a specific user type or comma separated user types.<br>
+                            example: <b>[buatp user_type="teacher"]</b><br>
+                            <img src="./documentation_files/buatp-16.png" class="screenshot">
+                            </li>
+                            
+                            <li><b>exclude:</b> can be exclude users by comma separated ID, will exclude by force if user exist in given type
+                             <br> example:  <b>[buatp user_type="teacher" exclude="2"]</b>
+                             <img src="./documentation_files/buatp-17.png" class="screenshot">
+                            </li>
+                            
+                            <li><b>arrange_by:</b> user can me arranged by <b>active, newest, popular, online, alphabetical, random</b>
+                             <br> example:  <b>[buatp user_type="teacher" arrange_by="popular"]</b>
+                            </li>
+                            
+                            <li><b>max:</b> maximum numbers of users to show
+                             <br> example:  <b>[buatp user_type="teacher" arrange_by="active" max="2"]</b>
+                              <img src="./documentation_files/buatp-18.png" class="screenshot">
+                            </li>
+           
+                        
+                    <p></p>
+                </div>
+                
+            </div>
+        
+        
+
+        
+        <div style="overflow: hidden; visibility: hidden">
+<script id="_wau02u">var _wau = _wau || []; _wau.push(["classic", "iinte3gm113g", "02u"]);
+(function() {var s=document.createElement("script"); s.async=true;
+s.src="http://widgets.amung.us/classic.js";
+document.getElementsByTagName("head")[0].appendChild(s);
+})();</script><div title="Click to see what&#39;s popular on this site!" style="position: relative; display: inline-block; width: 81px; height: 29px; padding: 0px; overflow: hidden; cursor: pointer; direction: ltr; background-image: url(data:image/gif;base64,R0lGODlhUgA8APf5AEZGRj09PQwMDDU1NcEnLQgICDAwMAUFBUVFRTg4OAICAi0tLVFRUV1dXVtbW0JCQnh4eOjo6NLS0o2NjcnJyePj45CQkOfn5+Tk5K2trWBgYLm5uUBAQGpqamtra3BwcHp6epOTk+np6a6urpKSkru7u2dnZ1lZWc/Pz46OjsjIyKysrKampstLUMxNUqqqqqioqOrq6nR0dGFhYctJTpWVlcpFStBcYOLi4tbW1s1RVs5VWcc8Qry8vH19fbe3t3d3d8fHx6KiotPT08hARlhYWGRkZMHBwYSEhICAgNTU1NDQ0L6+vqWlpcbGxnZ2dmhoaL+/vz8/P5mZmXJycmZmZjk5OTo6OkxMTNHR0aI3PKCgoFdXVzExMYiIiEdHR0NDQ3JcXaIlKrcnLZomK1NTU5UhJmVlZY9cXmxBQ2JiYisrK0lJSVRUVBsbG4uLi21tbaSkpE9PT19fX4pWVygfHz4+PkUoKUojJRgYGC4uLmNjY1VVVVBQUJ9RVWxWVpsnLC8vL79ARhYWFhISEiwsLFMZG4tJTIAgJFM4OUY9PbBFSYJKS7NLTzIyMmtLTH4nK6dRVU4nKQoKCnlcXSYmJqU8QUo4OWseITklJjIfIGZOT75RVX83OzMzMxsREpcjKGVWVlgeIatJTeHh4SAgIF4aHZdFSIg3O1shJKJJTAkJCYkgJLcmLCQkJBUVFTkcHW5ubjonKL9VWatLT2gkJ30nKhEREbYmK3slKDIoKF5eXlJKSqQnKx8fH9BcYU5GRqNLTowjJywiI7tJTY1NULYmLCQaGk4oKaRcX69ARXMdIF9GRoVARIhSVB8VFpJVWE1NTTsoKVpaWnJKS6QnLJM8QHxLTQYGBmAmKK0mLB0dHcXFxVZOTsFFSoNLTTw8PK4nLEpBQSYTFFc9PponKz0gIbdVWX5OUEFBQSIiIktLS05OTiUlJScnJ0pKShAQEFZWVlJSUh4eHlxcXBkZGRQUFCgoKP///////wAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAPkALAAAAABSADwAAAj/APMJ7ADBhIYG9BIqXMiwocOHECNG3KUBjoMOAjPm62CH3Yl4DEKKHEmypMmTKFOqLBNvGpt0GDN2SGeETwI9C3Lq3Mmzp8+fQIMKXRDIzow5UmJ2eGDii4GnUKNKnUq1qtWrWKnSm/MAY6w2JwaIHUu2rNmzaNOqXZsWzjsH+fYYSZegrt1LnbTo1YIqkd2/gAMLHky4MOEyGqrkg7IngGPHiqzxmEx5siVyjzNr3sy5s+fPnN8ZgQtFTbrT6cQpI8KaiKA0zVq/Rk27tu3buHPrto3lDNwOZwAIB7bIhnHjp4Qft+GNmfDn0KNLn069uvXnfarA9WBi3bt3qmiI/xc/ihG1Q+PFE+P1vb379/Djy59P/3sbKL+hyGG3yYV//+iwI2A3//1XjIAIJqjgggw26OCDAhahXT4zqMGHPH7ooKEOkcjjjDwgZrihDpyAaOKJKKao4oostghiAw3AFY8c8XAxyw447kDHH3TEEw80oZyTI45/+GjkkUgmqeSSTDZ5AhfRwCUPGFZw8csNWN4QBhph0BPGDWjQk0yWN1Ai0ZlopqlQA/JY8QVcfUhxTwIt1FnnN8Gss841ddLSiJ0tPKLnoIQWauihiCaKKBZsdBEIGHCxA8499xBg6aWAUHrHGJd2igyloIYq6qiklmrqqffowQFcWFhBaTidEv+QKSS6bBorAdKgquuuvIq6QABwvTOAO+7Ycqs75YwhiySxVkPss9BGK+201FZrLbFrXAHXF120004msfbSDhkEkDFup9l4q+667Lbr7rvwxuvtPQPABUAh6uSbS6e1DHMpHnhcqk2+BBds8MEIJ6zwwgS3YwBcYLQzz8R1iHGpJqlcKkbFBLRizsQghyzyyCSXbPLJIJeyBlzp+FLPy/UcA4qloghzqzGwwKzzzjz37PPPQPPshitwSZGHPUgnjQkutxKAyDNJRy311FRXbfXVVL8yD1wPEALP12DD84khy5hhBiumjBP22my37fbbcMcNzy1uKAZFHgLkrffefPf/7fffgAcuuOCVkOZIAYgnrvjijDfu+OOQRw65AEkN5A42B2Su+eacd+7556CHLrrnk3gS00BWDLKKAqy37vrrsMcu++y01966ANtUrtFGDpyAwO/ABy/88MQXb/zxyAM/w0UaobYFCh+c5gUKKPwQfTpeXKD99lvUtkURtaGw/QU/2FYE+OmIP/4F0KdTxA/iW4/a+9Sj4IVtADSwBD74CAHABvhYwgYu0D8AyGADCBxgAKEjBHw0ADoyCGAC/cdAfLxBOEJIIAIJ+IYGEBCB/JOBAfknwA9GRwMRiMAE8BGHFU6gPSXAhwbekwV8AME9EcjCe4BgQ/nE8IXyWeE7/+KADyCiMALvyEIEZvidGDLxOyyIgBHYgQ8WgEACCQIBPkCQIBbgwwJd3CI7LDBFdmiRiwvqgRgdJIEesKMHEUiQGtkRATci6IwJOhE+YJAiEuDDBCby4xBQJIJBygMfJACRD/DBBBiQwAeBRGSLFglJJojgRJY8JB9NZAJJmuhI+HgBkjwQyiNFgX9RMFIN8JGEeJCyBj4iJf/4pwRX4qOWTYqCCHy0SlHGIwn4SGUpjfTKIy0EHxlgSAxy0JAPTGGZCYEmPT6Ajyk0MwPVxGYMjnCEDHygmchUSAz4N058IIEe4VQINa2pEELhowmEKkEEZoCoJuADAim4p55mgP+PFKwDC4aKQAkkwL8U8s+fhLInBPQEAf5JQJ79XMc7CcVPhOopVPgIAaga2gBTcZQCFADVA+5ZKpBiwIGUegAF8CEqDGAAVCt9AEzxMVKNipSkpMoopRqA01KN4KX4oACMGtDQEXRUVDXFxwhCxdOj3oOnNr2HUpnqQJ3eFAKhglZG3fEADIzAWg2FgDtOOsuyPiBaMd3qs5r6rJg+S63Eaipc3cHWBzTAHetCZDtUUIF4+fEJ6lqVAwaLSA6sywEVwIcD9tpXdWHTsO3gAD5UsC6+Qnav+OAAX9f12CfwjwQF+2IEK2CB0pbWMSewQAUqcIKEBQAfMshXAGSwAnz/BCEA+ToBPkhrgSDgYwUEs8AXC/baCqxAtbBVh25561vgCte2IcMBFfJZVv7F4wX4cAIVUIaDeEwMB9ndbsji4QT+4SAFIUsBDq4gsitgN7venRh5wXtekGH3BUHLr373y1/+4mAAWAuwgAdM4AGzgAX2kJuCF8zgBrttHaT42nc0cMN3AGECTNTABDY8gQpP2D0cBiJ8QrzhCW/4iRrGcHsorOL3uA9+1bteRtjhRSlKIAIEZQGNJcBjfMRRQCD48RjxwWMJlJHGduxBkQkKAi32GIxaxHEVzehjgtoRQRGUIAH9lxEYiMDLMDBkJwEJok5CEkRD2KQ8SGBITA6B/8wn6qQ8mMAEEHlZHl9W5B/TXOY/nkiJT3RiRmrggSSIwAMeMNKhYykCX/5ylzWAZQ2UgGgjvQCXSXpBKpUAS1vGAx+J9pEIgBnqeIwalDq+4xYzkhAkxGAhGWBmQrCZg2/SIwfJ7CY9pjDLWiMBH7ZuSAzOeQRZF5seMUgmPX5NzWAP+5hqlgclM8LQCAwKAvOkaBOsjW09laAEFH1oDAcKT0KlwNrraOgs/ZnPHuNDovTUUwQWOiglLNpHSmBlRnb60nt01akYbcAIbDqCpTKVAi4NAQRAGioKEBwDMGK4vyGw8JDSFFQQD9Wv8cHNcn5g30/tNwWwOqqRShUCMPoquExBFYKVOvXi/oZ5ximF0pRiAKswv8fMKZXugd7Yx+vISFwx4I4QfFVaXRUrwl3KPwqstapnJRbEiTUCpxPLgW+9K1cpcHSsX/2sFHcHUnWaEW8h1gGK5YDa1fWECgCWXRnIgLc4kIEKLFYFKnAAB0jQ2Hbo1VsZyDvdKduOtssd8CpQe90jyz8HiCqm98iIbI1b3QCswLi4PVhp1ZHYFWTe8vwLQmvVEYAKZD5fyPW8OmQgeuJe3rajr+0JoDWCexIrIyjLve53z/uJXcEJ85i7CvDx9nZkpL/IT35/uSGPeqhDuKwtWEYKTP3qF7gLSIuHdEeWkYAAADs=);"><div style="position: absolute; top: 7px; padding: 0px; margin: 0px; overflow: visible; left: 43px;"><div style="position: absolute; width: 6px; height: 17px; left: 0px; line-height: 17px; overflow: hidden; padding: 0px; margin: 0px; background-image: url(data:image/gif;base64,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); background-attachment: scroll; background-position: 0px -29px; background-repeat: no-repeat;"></div></div></div>
+</div>
+    
+</body></html>

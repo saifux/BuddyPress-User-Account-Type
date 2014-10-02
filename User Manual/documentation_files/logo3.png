@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-US" id="wp_maintenance_mode">
+<head>
+		
+		
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="author" content="WP Maintenance Mode: Frank Bueltge, http://bueltge.de" />
+	<meta name="description" content="wp.bp.shop - your ultimate solution for wordpress, buddypress and multisite website" />
+	<meta name="keywords" content="Maintenance Mode" />
+	<meta name="robots" content="index, follow" />
+	<link rel="Shortcut Icon" type="image/x-icon" href="http://wpbpshop.com/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="http://wpbpshop.com/wp-content/plugins/wp-maintenance-mode/css/jquery.countdown.css" media="all" />
+	
+	<link rel="stylesheet" href="http://wpbpshop.com/wp-content/plugins/wp-maintenance-mode/styles/txt.css" type="text/css" media="all" />
+	
+</head>
+
+<body>
+	
+	<div id="header">
+			</div>
+
+	<div id="content">
+		
+		<h1>We are running a major update</h1>		
+		<p>Awesome new things coming soon, Thanks for you patience</p>
+		<div class="admin" onclick="location.href='http://wpbpshop.com/wp-login.php';" onkeypress="location.href='http://wpbpshop.com/wp-login.php';"><a href="http://wpbpshop.com/wp-login.php">Admin-Login</a></div>
+				
+	</div>
+	
+				<div id="footer">
+				<p><a href="http://bueltge.de/">Plugin by: <img src="http://bueltge.de/favicon.ico" alt="bueltge.de" width="16" height="16" /></a>
+								</p>
+			</div>
+			</body>
+</html>
