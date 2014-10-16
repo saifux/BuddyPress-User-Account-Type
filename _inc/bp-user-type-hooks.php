@@ -530,19 +530,20 @@ function buatp_page_restriction(){
         return;
     }
     
-    if(!$access['buatp_restrict_redirect_general']){
+    if(!isset($access['buatp_restrict_redirect_general']) || $access['buatp_restrict_redirect_general'] == false ){
         return;
     }
     
     foreach((array)$type_names as $val) {
         $user_type = $val['id'];
-        $pages = explode(',',trim($access['buatp_restrict_page_for_'.$user_type]));
-        $url = preg_split('/[\r\n]+/', buatp_prepare_url(trim($access['buatp_restrict_url_for_'.$user_type])), -1, PREG_SPLIT_NO_EMPTY);
+        $restricted_pages = isset($access['buatp_restrict_page_for_'.$user_type]) ? $access['buatp_restrict_page_for_'.$user_type] : '';
+        $pages = explode(',',trim($restricted_pages));
+        $url = preg_split('/[\r\n]+/', buatp_prepare_url( trim( $restricted_pages )), -1, PREG_SPLIT_NO_EMPTY);
         $urls = array_merge((array) $urls, (array) $url ) ;
         
     
         $all_restricted_pages = array_merge( (array) $all_restricted_pages,(array) $pages, (array) $urls );
-        if($access['buatp_restrict_page_for_'.$val['id']] || count( $urls ) ) { 
+        if( isset($access['buatp_restrict_page_for_'.$val['id']]) || count( $urls ) ) { 
             $resricted = true;
          }
     }
@@ -568,17 +569,18 @@ function buatp_page_restriction(){
         return;
     foreach((array)$type_names as $val) {
         $user_type = $val['id'];
-        $page_arr = explode(',',trim($access['buatp_restrict_page_for_'.$user_type]));
-        $url = (array)preg_split('/[\r\n]+/', buatp_prepare_url(trim($access['buatp_restrict_url_for_'.$user_type])), -1, PREG_SPLIT_NO_EMPTY);
+        $restricted_pages = isset($access['buatp_restrict_page_for_'.$user_type]) ? $access['buatp_restrict_page_for_'.$user_type] : '';
+        $page_arr = explode(',',trim($restricted_pages));
+        $url = (array)preg_split('/[\r\n]+/', buatp_prepare_url(trim($restricted_pages)), -1, PREG_SPLIT_NO_EMPTY);
         if(in_array($current_url, $url) && $user_type == $current_user_type ) {
                     $do_redirect = true;
-                    $redirect_to = $access['buatp_restrict_redirect_for_'.$user_type];
+                    $redirect_to = isset($access['buatp_restrict_redirect_for_'.$user_type]) ? $access['buatp_restrict_redirect_for_'.$user_type] : false;
                     break;
                     
         }
         if(in_array($page_id, $page_arr) && $user_type == $current_user_type ) {
                     $do_redirect = true;
-                    $redirect_to = $access['buatp_restrict_redirect_for_'.$user_type];
+                    $redirect_to = isset($access['buatp_restrict_redirect_for_'.$user_type]) ? $access['buatp_restrict_redirect_for_'.$user_type] : false;
                     break;
                     
         }
