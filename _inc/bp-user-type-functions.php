@@ -123,8 +123,26 @@ function buatp_get_all_types($field_id , $selection = '*', $output = 'multidiman
 //////////////////////////////////////////////////////////////////////////////////////////////
 
 function buatp_get_field_id_by_name($name) {
-    return xprofile_get_field_id_from_name($name);
+    //Comment by woolf
+    //date: 3/14/2015
+    //return xprofile_get_field_id_from_name($name);
+    return get_field_id_from_name($name);
 }
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+//add by woolf
+//date: 3/14/2015
+//overide the buddypress's fucntion.
+//because the buddypress function is changed, it lead to return null
+function get_field_id_from_name( $field_name ) {
+    global $wpdb, $bp;
+    if ( empty( $bp->profile->table_name_fields ) || !isset( $field_name ) )
+        return false;
+
+    return $wpdb->get_var( $wpdb->prepare( "SELECT id FROM {$bp->profile->table_name_fields} WHERE name = %s", $field_name ) );
+}
+//end
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 
